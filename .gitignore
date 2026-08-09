@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Vim / Neovim
+*.swp
+*.swo
+*.tmp
+*~
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
