@@ -1,6 +1,6 @@
-# AI Prompt Library
+# AI Engineering Toolkit
 
-A curated collection of reusable AI prompts for professional software engineering.
+A curated collection of reusable AI prompts, workflows, and engineering resources for professional software development.
 
 The library is designed to help developers perform common engineering tasks consistently across multiple languages, frameworks, cloud providers, and architectural styles.
 
@@ -125,9 +125,24 @@ Instead, every prompt should:
 
 ---
 
+## Recommended Models
+
+⭐⭐⭐⭐⭐ GPT-5.5
+Best overall quality for architecture, prompt engineering, documentation, and complex reasoning.
+
+⭐⭐⭐⭐ GPT-OSS-120B (Groq)
+Excellent for architecture reviews, large refactorings, and software engineering.
+
+⭐⭐⭐⭐ GPT-OSS-20B (Groq)
+Recommended default for daily coding inside CodeCompanion.
+
+⭐⭐⭐ Qwen 3.6 27B (Groq)
+Fast and capable general-purpose coding model.
 ## Contributing
 
-Contributions are welcome.
+---
+
+## Contributions are welcome.
 
 When adding new prompts:
 
