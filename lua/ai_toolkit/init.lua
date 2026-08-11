@@ -6,7 +6,7 @@ local root = vim.fn.expand("~/code/ai-engineering-toolkit")
 -- Read a Markdown prompt
 -------------------------------------------------------
 local function load_prompt(path)
-    local lines = vim.fn.readfile(root .. "/" .. path)
+    local lines = vim.fn.readfile(path)
 
     if #lines == 0 then
         return nil
@@ -16,7 +16,6 @@ local function load_prompt(path)
     -- Extract title from first H1
     ---------------------------------------------------
     local title = "Untitled"
-
     local i = 1
 
     while i <= #lines do
@@ -40,34 +39,62 @@ local function load_prompt(path)
 end
 
 -------------------------------------------------------
--- Build one prompt
+-- Discover prompts recursively
 -------------------------------------------------------
-local title, body = load_prompt("prompts/my-test.md")
+local function discover_prompts()
+    local prompt_dir = root .. "/prompts"
 
---------- DEBUG
-print("Title: " .. title)
-print("----- BODY -----")
-print(body)
-print("----------------")
----------------
+    local files = vim.fs.find(function(name)
+        return name:match("%.md$")
+    end, {
+        path = prompt_dir,
+        type = "file",
+        limit = math.huge,
+    })
 
-M[title] = {
+    return files
+end
 
-    strategy = "chat",
+-------------------------------------------------------
+-- Build prompt library
+-------------------------------------------------------
+for _, file in ipairs(discover_prompts()) do
 
-    description = title,
+    local title, body = load_prompt(file)
 
-    opts = {
-        alias = "my-test",
-        index = 1,
-    },
+    if title and body then
 
-    prompts = {
-        {
-            role = "user",
-            content = body,
-        },
-    },
-}
+        local alias = vim.fn.fnamemodify(file, ":t:r")
+
+        M[title] = {
+            strategy = "chat",
+
+            description = title,
+
+            opts = {
+                alias = alias,
+                index = 1,
+            },
+
+            prompts = {
+                {
+                    role = "user",
+                    content = body,
+                },
+            },
+        }
+
+    end
+end
+
+-- print("====================================")
+-- print("AI Toolkit Prompt Library")
+-- print("====================================")
+--
+-- for name, prompt in pairs(M) do
+--     print(name, prompt.opts.alias)
+-- end
+--
+-- print("====================================")
 
 return M
