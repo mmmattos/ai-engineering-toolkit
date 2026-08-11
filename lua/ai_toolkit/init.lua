@@ -74,6 +74,7 @@ for _, file in ipairs(discover_prompts()) do
             opts = {
                 alias = alias,
                 index = 1,
+                type = "prompt",
             },
 
             prompts = {
