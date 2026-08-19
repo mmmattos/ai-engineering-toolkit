@@ -66,6 +66,27 @@ for _, file in ipairs(discover_prompts()) do
 
         local alias = vim.fn.fnamemodify(file, ":t:r")
 
+        local content = body
+
+        ------------------------------------------------
+        -- Dynamic editor context
+        ------------------------------------------------
+        if body:find("#{selection}", 1, true) then
+
+            content = function(context)
+
+                local prompt = body
+
+                prompt = prompt:gsub(
+                    "#{selection}",
+                    context.code or ""
+                )
+
+                return prompt
+            end
+
+        end
+
         M[title] = {
             strategy = "chat",
 
@@ -80,22 +101,12 @@ for _, file in ipairs(discover_prompts()) do
             prompts = {
                 {
                     role = "user",
-                    content = body,
+                    content = content,
                 },
             },
         }
 
     end
 end
-
--- print("====================================")
--- print("AI Toolkit Prompt Library")
--- print("====================================")
---
--- for name, prompt in pairs(M) do
---     print(name, prompt.opts.alias)
--- end
---
--- print("====================================")
 
 return M
