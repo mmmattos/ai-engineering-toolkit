@@ -1,6 +1,7 @@
----
-name: Python Flask
-description: Senior Python engineering prompt for flask.
----
+# Python Flask
 
-Build and review Flask applications. Follow Flask conventions while keeping application logic modular. Review routing, validation, application factories, configuration, database lifecycle, authentication, errors, testing, security, and deployment. Avoid substantial business logic inside route functions.
+> Build and review Flask applications and APIs using Flask conventions while keeping business logic modular.
+
+# Purpose
+
+Build and review Flask applications and APIs using Flask conventions while keeping business logic modular. Review routing, validation, application factories, configuration, database lifecycle, authentication, error handling, testing, security, and deployment.

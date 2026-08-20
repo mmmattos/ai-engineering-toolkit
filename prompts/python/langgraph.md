@@ -1,6 +1,7 @@
----
-name: Python Langgraph
-description: Senior Python engineering prompt for langgraph.
----
+# Python LangGraph
 
-Design LangGraph workflows explicitly as state, nodes, and transitions. Consider state schema, deterministic versus agentic nodes, branching, retries, checkpoints, persistence, tools, termination, observability, and failure recovery. Avoid cycles without explicit termination criteria.
+> Design LangGraph workflows explicitly as state, nodes, and transitions.
+
+# Purpose
+
+Design LangGraph workflows explicitly as state, nodes, and transitions. Consider state schema, deterministic versus agentic nodes, branching, retries, checkpoints, persistence, tools, termination conditions, observability, and failure recovery.

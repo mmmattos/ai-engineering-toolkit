@@ -1,6 +1,7 @@
----
-name: Python Fastapi
-description: Senior Python engineering prompt for fastapi.
----
+# Python FastAPI
 
-Build and review production FastAPI services. Review routes, Pydantic schemas, dependency injection, async/sync boundaries, database sessions, authentication, errors, middleware, OpenAPI, tests, and observability. Keep business logic outside route handlers and never perform blocking I/O directly in async code.
+> Build and review production FastAPI services.
+
+# Purpose
+
+Build and review production FastAPI services. Consider route design, Pydantic schemas, dependency injection, async/sync boundaries, database sessions, authentication, authorization, errors, middleware, OpenAPI, testing, and observability. Keep business logic outside route handlers and avoid blocking I/O in async code.

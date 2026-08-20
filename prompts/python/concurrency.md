@@ -1,6 +1,7 @@
----
-name: Python Concurrency
-description: Senior Python engineering prompt for concurrency.
----
+# Python Concurrency
 
-Choose Python concurrency according to workload: asyncio for cooperative I/O, threads for suitable blocking I/O, and processes when appropriate for CPU-bound work. Consider shared state, synchronization, cancellation, timeouts, backpressure, resource limits, deadlocks, and races. Prefer explicit lifecycle and ownership.
+> Choose the Python concurrency model according to workload: asyncio for cooperative I/O, threads for suitable blocking I/O, and processes where appropriate for CPU-bound work.
+
+# Purpose
+
+Choose the Python concurrency model according to workload: asyncio for cooperative I/O, threads for suitable blocking I/O, and processes where appropriate for CPU-bound work. Consider shared state, synchronization, cancellation, timeouts, backpressure, resource limits, deadlocks, and race conditions.

@@ -1,6 +1,7 @@
----
-name: Python Vector Search
-description: Senior Python engineering prompt for vector search.
----
+# Python Vector Search
 
-Design Python vector search with attention to embedding dimensions, metadata, similarity metrics, indexing, filtering, hybrid search, ranking, latency, cost, persistence, and retrieval evaluation. Keep provider-specific code isolated and interfaces testable.
+> Design and improve Python vector-search pipelines.
+
+# Purpose
+
+Design and improve Python vector-search pipelines. Consider embeddings, chunking, vector dimensions, similarity metrics, indexing, metadata filtering, hybrid search, top-k selection, reranking, relevance, latency, cost, persistence, and retrieval evaluation.

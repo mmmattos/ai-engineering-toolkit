@@ -1,6 +1,7 @@
----
-name: Python Review
-description: Senior Python engineering prompt for review.
----
+# Python Code Review
 
-Perform a senior-level Python code review. Prioritize correctness, bugs, edge cases, security, performance, maintainability, testing, API/design concerns, and operational risks. Prioritize findings by severity and distinguish definite problems from suggestions. Avoid formatting nitpicks handled by tooling.
+> Perform a production-oriented review of Python code.
+
+# Purpose
+
+Perform a production-oriented review of Python code. Check correctness, bugs, edge cases, security, performance, maintainability, testing, API/design concerns, and operational risks. Prioritize findings by severity and distinguish definite problems from optional improvements.

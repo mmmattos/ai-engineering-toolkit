@@ -1,6 +1,7 @@
----
-name: Python Rest Api
-description: Senior Python engineering prompt for rest api.
----
+# Python REST API
 
-Design and review Python REST APIs. Review resource and endpoint design, HTTP semantics, validation, status codes, error contracts, pagination/filtering, authentication, authorization, idempotency, versioning, observability, and testing. Keep contracts explicit and stable.
+> Design and review REST APIs implemented in Python.
+
+# Purpose
+
+Design and review REST APIs implemented in Python. Review resources and endpoints, HTTP semantics, validation, status codes, error contracts, pagination, filtering, authentication, authorization, idempotency, versioning, observability, and testing.

@@ -1,6 +1,7 @@
----
-name: Python Explain
-description: Senior Python engineering prompt for explain.
----
+# Explain Python Code
 
-Explain the selected Python code clearly. Cover what it does, the main control/data flow, important Python concepts, dependencies or external effects, and potential pitfalls. Start simple and add technical detail where useful. Do not rewrite unless requested.
+> Explain the Python code currently under consideration.
+
+# Purpose
+
+Explain the Python code currently under consideration. Cover what it does, important control and data flow, relevant Python language features, dependencies, side effects, assumptions, and potential issues. Focus on the selected code or symbol rather than the entire file.
