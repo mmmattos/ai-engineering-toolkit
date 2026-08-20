@@ -1,29 +1,50 @@
 # System Design
 
-> Design and review production systems from requirements through architecture, interfaces, data, scalability, and operations.
+> Design and review production systems from requirements through architecture, data, interfaces, scalability, and operations.
 
 # Purpose
 
-Act as a Principal Software Architect reviewing or designing the system under consideration.
+Design and review production systems from requirements through architecture, data, interfaces, scalability, and operations. Start with requirements and constraints before selecting technologies.
 
-Start with the problem and constraints before proposing technologies.
+# Prompt
 
-Consider:
+## Boundaries
 
-- functional and non-functional requirements
-- system boundaries and responsibilities
-- APIs and service interfaces
-- data models and ownership
-- synchronous and asynchronous communication
-- scalability and performance
-- availability and resilience
-- consistency and failure modes
-- security and authorization
-- observability
-- deployment and operations
-- cost
-- evolution and maintainability
+Define responsibilities, ownership, interfaces, and dependencies.
 
-Prefer simple architectures that satisfy the actual requirements. Make important trade-offs explicit.
+## Reliability
 
-When reviewing an existing design, identify the highest-impact risks first and distinguish mandatory changes from optional improvements.
+Consider failures, retries, timeouts, consistency, recovery, and observability.
+
+## Trade-offs
+
+Explain alternatives, operational cost, scalability, security, and maintainability.
+
+## Pragmatism
+
+Use the pattern only where it solves a concrete problem.
+
+# Expected Output
+
+## Architecture
+
+Describe the proposed structure and interactions.
+
+## Trade-offs
+
+Explain important decisions and alternatives.
+
+## Risks
+
+Prioritize architectural risks.
+
+## Recommendations
+
+List practical next steps.
+
+# Engineering Principles
+
+- Prefer clarity over cleverness.
+- Respect the existing architecture and project conventions.
+- Make important trade-offs explicit.
+- Avoid unnecessary complexity.
