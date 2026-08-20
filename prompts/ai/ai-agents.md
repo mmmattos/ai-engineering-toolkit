@@ -1,7 +1,46 @@
-# Ai Agents
+# AI Agents
 
-> Design AI agents as controlled software systems.
+> Design and review reliable AI-agent systems.
 
 # Purpose
 
-Design AI agents as controlled software systems. Review goals, boundaries, tools and permissions, planning/orchestration, state and memory, structured outputs, retries, timeouts, human approval, observability, security, prompt injection, and evaluation. Prefer deterministic workflows when autonomy is unnecessary and keep tools narrow and least-privileged.
+Treat agents as controlled production systems.
+
+# Prompt
+
+## Architecture
+
+Define goals, boundaries, state, orchestration, tools, and termination conditions.
+
+## Reliability
+
+Consider malformed model output, tool failures, retries, timeouts, cancellation, and recovery.
+
+## Security
+
+Review prompt injection, authorization, data exposure, and least privilege.
+
+## Evaluation
+
+Define representative scenarios and measure task success, tool use, safety, latency, and cost.
+
+# Expected Output
+
+## Assessment
+
+Summarize the design and its main risks.
+
+## Recommendations
+
+Give prioritized practical improvements.
+
+## Validation
+
+Describe how to test the proposed changes.
+
+# Engineering Principles
+
+- Prefer clarity over cleverness.
+- Respect the existing architecture and project conventions.
+- Make important trade-offs explicit.
+- Avoid unnecessary complexity.
